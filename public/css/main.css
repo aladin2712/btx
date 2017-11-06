@@ -37,7 +37,7 @@ html{
 body{
 	position:relative;
 	height:100%;
-	font:14px/1.4285 'proxima_nova', Arial, Helvetica, sans-serif;
+	/*font:14px/1.4285 'proxima_nova', Arial, Helvetica, sans-serif;*/
 	color:#32383c;
 }
 a {
@@ -11329,4 +11329,17 @@ background: none;
 .author img{
 	width:44px;
 	heigth:44px;
+}
+.trust-wrap .img-circle{
+	width:44px;
+	heigth:44px;
+}
+.faq{
+	padding-top:5px;
+}
+.faq-title{
+	text-transform: uppercase;
+    color: #00ace1;
+    position: static;
+    padding-bottom: 50px;
 }

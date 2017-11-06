@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+
+ <% include partials/head.html %>
+
+<body>
+
+  <div class="layout ">
+    <div class="promo-med  promo-block promo-block-visa-details" style="background-image:url(/images/russia-visa.jpg);">
+      <header>
+        <% include partials/header.html %>
+      </header>
+
+
+      <div class="modal fade" id="modal-get-started" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                        <i class="fa fa-times"></i>
+                </span>
+              </button>
+           </div>
+          </div>
+        </div>
+      </div>
+        <!-- 4 steps -->
+      <% include partials/foursteps.html %>
+    </div>
+
+
+    <!-- visa services -->
+
+    <section class="promo-links-section">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3 class="">
+              Hệ thống đang bảo trì cho tính năng này,
+              xin quý khách vui lòng liên hệ trực tiếp với chúng tôi !
+
+              <%=error.stack %>
+            </h2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <% include partials/footer.html %>
+  </div>
+  <% include partials/js.html %>
+  <script>
+    //init country select box
+    $('document').ready(function(){
+
+
+    });
+  </script>
+
+</body>
+
+<!-- Mirrored from www.passportsandvisas.com/visas/russia by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Oct 2017 06:04:50 GMT -->
+
+</html>

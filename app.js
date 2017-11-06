@@ -7,7 +7,10 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var faq = require('./routes/faq');
+var visaServices = require('./routes/visa-services');
+var visaService = require('./routes/visa-service');
+var otherServices = require('./routes/other-services');
 var app = express();
 
 // view engine setup
@@ -24,6 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/cau-hoi-thuong-gap', faq);
+app.use('/visa', visaServices);
+app.use('/dich-vu-khac', otherServices);
+app.use('/dich-vu-visa', visaService);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
