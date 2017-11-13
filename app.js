@@ -12,6 +12,7 @@ var visaServices = require('./routes/visa-services');
 var visaService = require('./routes/visa-service');
 var otherServices = require('./routes/other-services');
 var visaSearch = require('./routes/visa-search');
+var post = require('./routes/post');
 var app = express();
 
 // view engine setup
@@ -33,7 +34,7 @@ app.use('/visa', visaServices);
 app.use('/dich-vu-khac', otherServices);
 app.use('/dich-vu-visa', visaService);
 app.use('/dich-vu-visa/dat-nuoc/', visaSearch);
-
+app.use('/post',post);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

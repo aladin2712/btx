@@ -97,41 +97,13 @@
     </section>
 
     <% include ../partials/footer.html %>
+    <% include ../partials/review.html %>
   </div>
   <% include ../partials/js.html %>
-  <script>
-    //init country select box
-    $('document').ready(function(){
-
-      var $countrySlc = $('#country_slc');
-      for(cIndex in countries){
-        $countrySlc.append($('<option/>', {
-           value: cIndex,
-           text : countries[cIndex]
-        }));
-      }
-      $countrySlc.selectpicker({
-        style: 'btn-info',
-        size: 4
-      });
-      $countrySlc.on('change',function(e){
-        var cIndex = $(this).val();
-        var selectedCountry = countries[cIndex];
-        var displayCountry =  selectedCountry.substring(0,selectedCountry.indexOf('('));
-        console.log(cIndex);
-        if(visaNotRequiredCountries.indexOf(parseInt(cIndex)) >= 0){
-          $('.moreThan30Days').show();
-        } else{
-          $('.moreThan30Days').hide();
-        };
-        $('[type="uc"]').html(displayCountry);
-        $('#supported_service').show();
-      });
-    });
-  </script>
+  <script src="/js/visa-services.js"></script>
 
 </body>
 
-<!-- Mirrored from www.passportsandvisas.com/visas/russia by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Oct 2017 06:04:50 GMT -->
+
 
 </html>

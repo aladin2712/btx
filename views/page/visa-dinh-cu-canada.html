@@ -30,9 +30,9 @@
       <% include ../partials/foursteps.html %>
     </div>
 
-
+    <% include ../partials/visa-services.html %>
     <!-- visa services -->
-    <section class="container main-content">
+    <section class="container main-content white caret-bottom">
       <br/><br/>
       <div class="container">
         <div class="row">
@@ -70,54 +70,25 @@
             </ol>
             <strong>Lưu ý </strong>:
               Tất cả các giấy tờ photo một mặt trên khổ giấy A4, không cắt nhỏ<br/>
-              Những giấy tờ làm thủ tục xin visa <%=country%> thăm thân ở trên có thể thay đổi theo yêu cầu của cơ quan lãnh sự <%=country%>. Vì vậy để biết chính xác cần phải chuẩn bị những gì để có thể hoàn thiện hồ sơ xin visa <%=country%>, vui lòng liên hệ với Bầu trơì xanh để được tư vấn.
+              Những giấy tờ làm thủ tục xin visa <%=country%> <%=visaType%> ở trên có thể thay đổi theo yêu cầu của cơ quan lãnh sự <%=country%>. Vì vậy để biết chính xác cần phải chuẩn bị những gì để có thể hoàn thiện hồ sơ xin visa <%=country%>, vui lòng liên hệ với Bầu trơì xanh để được tư vấn.
 
             </p>
             <div>
 
             </div>
           </article>
-          <div class="col-lg-3 col-md-4 col-sm-4 sidebar">
-            <div class="side-box">
-							<strong class="head">Liên hệ ngay hotline</strong>
-							<ul class="side-menu">
-                  <li><a href="tel:0976910228">0976.910.228</a></li>
-                  <li><a href="tel:0902603383">0902.603.383</a></li>
-							</ul>
-						</div>
-            <div class="side-box trust-reviews">
-        <div class="side-testimonials">
-        <p>Dịch vụ rất nhanh và uy tín, tiết kiệm cho tôi rất nhiều thời gian</p>
-        <div class="trust-wrap">
-        	<img class="img-circle" src="/images/ico-people02.png" alt="anh Nhân">
-            <div class="trust-name">
-                <p><strong>Anh Nhân</strong></p>
-                <p class="trust-stars">
-
-               </p><div class="star-rating clearfix star-5">
-                    <div class="star-1"><img src="/images/sprite_star.png" width="10" height="10"></div>
-                    <div class="star-2"><img src="/images/sprite_star.png" width="10" height="10"></div>
-                    <div class="star-3"><img src="/images/sprite_star.png" width="10" height="10"></div>
-                    <div class="star-4"><img src="/images/sprite_star.png" width="10" height="10"></div>
-                    <div class="star-5"><img src="/images/sprite_star.png" width="10" height="10"></div>
-                </div>
-
-                <p></p>
-            </div>
-        </div>
-        </div>
-    </div>
-          </div>
+            <% include ../partials/side-box.html %>
 
         </div>
       </div>
     </section>
-
+    <% include ../partials/why-us.html %>
+    <% include ../partials/customer-say.html %>
     <% include ../partials/footer.html %>
+    <% include ../partials/review.html %>
   </div>
   <% include ../partials/js.html %>
-<script src="/js/visa-services.js"></script>
-
+  <script src="/js/visa-services.js"></script>
 </body>
 
 
