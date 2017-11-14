@@ -255,7 +255,7 @@ header {
 .header-mob .logo {
 	position: relative;
 	margin-top: 5px;
-	z-index: 10000;
+	/*z-index: 10000;*/
 	width: 85px;
 	height: 65px;
 }
