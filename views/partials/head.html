@@ -7,12 +7,19 @@
   <title><% if(typeof title != "undefined"){ %>
    <%=title %>
  <% } else{ %>
-   Visa bầu trời xanh
+   Visa bầu trời xanh dịch vụ xin visa uy tín HCM - BTX.VN
 <% } %>
 
   </title>
+  <%
+    var description = "Dịch vụ làm visa uy tín tại TP.HCM hỗ trợ xin visa đi Anh, Pháp, Canada, Các nước Châu Âu, Châu Mỹ tại HCM.Hỗ trợ làm visa du lịch, thăm thân, công tác, định cư";
+    if(typeof des != "undefined"){
+      description = des ;
+    }
 
-  <meta name="description" content="Dịch vụ làm visa - thị thực đi Anh, Pháp, Canada, Các nước Châu Âu, Châu Mỹ tại HCM.Hỗ trợ làm visa du lịch, thăm thân, công tác, định cư ">
+  %>
+
+  <meta name="description" content="<%=description %>"/>
   <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
   <meta property="og:url"                content="https://btx.vn" />
   <meta property="og:type"               content="article" />
@@ -33,9 +40,7 @@
   </script>
 
 
-  <script type="application/ld+json">
-    { "@context": "http://schema.org/", "@type": "Service", "name": " btx.vn", "aggregateRating": { "@type": "AggregateRating", "ratingValue": " 9.1 ", "bestRating": "10", "worstRating": "1", "ratingCount": " 769 " } }
-  </script>
+
 
   <link rel="stylesheet" href="/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/css/bootstrap-editable.css"/>
@@ -49,5 +54,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"/>
   <link href="/css/flag-icon.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="alternate" href="https://btx.vn" hreflang="vi-vn" />
   <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5a0e6181198bd56b8c03ba7e/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </head>

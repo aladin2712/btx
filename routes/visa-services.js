@@ -13,17 +13,29 @@ router.get('/:visaType/:country', function(req, res, next) {
     'visa-dinh-cu':'định cư'
 
   };
-  var title = "Dịch vụ xin visa đi "+ country + " "+ messageProperties[visaType] +" chuyên nghiệp, tận tâm, không phát sinh chi phí";
+  var desMap = {
+    'visa-du-lich':'Bạn muốn xin visa du lịch {0} mà không rõ thủ tục hay đã bị từ chối? Bạn là khách hàng thông thái, hãy để BTX giúp bạn tiết kiệm thời gian và tiền bạc.',
+    'visa-tham-than':'Bạn muốn thăm con hoặc người thân ở {0} nhưng đang bối rối trong quá trình làm hồ sơ, thủ tục thăm thân? Hãy để chúng tôi giúp bạn.',
+    'visa-cong-tac':'Bạn đang có nhu cầu xin visa công tác {0} để làm ăn với đối tác của mình tại {0} mà không biết thủ tục, hồ sơ như thế nào? hãy để BTX giúp bạn.',
+    'visa-dinh-cu':'Gia đình bạn đang có kế hoạch chuyển sang {0} định cư? Bạn xin visa định cư {0} nhưng chưa làm được? Hãy để BTX giúp bạn.'
+  }
+  var title = "Visa đi "+ country + " "+ messageProperties[visaType] +" | Hỗ trợ thủ tục | BTX.VN" ;
+  var des = desMap[visaType].replace(new RegExp('\\{0\\}', 'g'), country);
   var model = {
     visaType:messageProperties[visaType],
     country:country,
-    title:title
+    title:title,
+    des:des
   };
-  var specialCoutries = ['canada'];
+  var specialCoutries = [
+    {'html':'canada','display':'canada'},
+    {'html':'ha-lan','display':'Hà Lan'}
+  ];
   var specialCountry = '';
   for(var i = 0 ; i < specialCoutries.length; i ++){
-    if(country.toUpperCase() == specialCoutries[i].toUpperCase()){
-      specialCountry = '-'+specialCoutries[i];
+    console.log(country);
+    if(country.toUpperCase() == specialCoutries[i].display.toUpperCase()){
+      specialCountry = '-'+specialCoutries[i].html;
     }
   }
   var page = 'page/'+visaType+specialCountry+'.html';

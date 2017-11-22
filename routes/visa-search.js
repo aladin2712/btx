@@ -46,7 +46,8 @@ router.get('/:country', function(req, res, next) {
   var title = "Dịch vụ xin visa đi "+ countryInTittle +" chuyên nghiệp, tận tâm, không phát sinh chi phí";
   var model = {
     country:countryMap[country],
-    title:title
+    title:title,
+    countryName:country
   };
   var page = 'page/visa-search.html';
   res.render(page,model);
