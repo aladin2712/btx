@@ -40,10 +40,11 @@
             <h2>
               Thủ tục xin visa <%=country%> <%=visaType%> :
             </h2>
-            <img src="/images/toronto.jpg" class="img-responsive"/>
+
+            <img src="/images/thu-tuc-visa-du-lich-uc-hcm.jpg" alt="Thủ tục visa thăm thân Úc"class="img-responsive"/>
             <p>
-              Bài viết sẽ giải quyết các thắc mắc về thủ tục xin visa <%=visaType%> Canada.
-              Mọi người sẽ thấy xin visa Canada không khó như đã nghĩ sau khi đọc hết bài nhé.
+              Bài viết sẽ giải quyết các thắc mắc về thủ tục xin visa <%=visaType%> <%=country%>.
+              Mọi người sẽ thấy xin visa <%=country%> không khó như đã nghĩ sau khi đọc hết bài nhé.
             </p>
             <strong>
               Đầu tiên là chuẩn bị Hồ sơ bản thân:
@@ -106,7 +107,7 @@
               Và cuối cùng, phần quan trọng không kém, các mẫu đơn bạn phải điền:
             </strong>
             <ol type="1">
-              <li>Tờ khai xin visa Canada - Form IMM5257</li>
+              <li>Tờ khai xin visa <%=country%> - Form IMM5257</li>
               <li>Tờ khai thông tin gia đình - Form IMM5645</li>
               <li>Mẫu chấp thuận CVAC và sử dụng dịch vụ của VFS</li>
               <li>Form sử dụng người đại diện IMM5476 (nếu sử dụng người đại diện)</li>
@@ -114,7 +115,7 @@
 
             <strong>Lưu ý </strong>:
               Chữ ký của đương đơn trong tờ khai phải giống với chữ ký trên hộ chiếu<br/>
-              Các bạn sẽ nộp hồ sơ và được chụp hình, lấy dấu vân tay tại Trung tâm tiếp nhận thực Canada, địa chỉ: 162 Pasteur, phường Bến Nghé, Quận 1, TPHCM. Khi đi, bạn mang theo khoảng 148 USD để đóng phí, nhớ đổi ra đô lẻ nha, trung tâm này có khi thối lại 2 USD, có khi không .Sau đó, về nhà đợi kết quả thôi! Thông thường, lãnh sự quán Canada sẽ xét duyệt hồ sơ từ 4 – 6 tuần, hoặc có thể nhanh hơn, tuỳ thuộc vào tình hình hồ sơ của bạn!
+              Các bạn sẽ nộp hồ sơ và được chụp hình, lấy dấu vân tay tại Trung tâm tiếp nhận thực <%=country%>, địa chỉ: 162 Pasteur, phường Bến Nghé, Quận 1, TPHCM. Khi đi, bạn mang theo khoảng 148 USD để đóng phí, nhớ đổi ra đô lẻ nha, trung tâm này có khi thối lại 2 USD, có khi không .Sau đó, về nhà đợi kết quả thôi! Thông thường, lãnh sự quán <%=country%> sẽ xét duyệt hồ sơ từ 4 – 6 tuần, hoặc có thể nhanh hơn, tuỳ thuộc vào tình hình hồ sơ của bạn!
             </p>
             <div>
               Nếu có bất cứ thắc mắc nào về thủ tục, bạn hãy liên hệ với <b>Visa Bầu Trời xanh</b> theo số hotline: <a href="tel:0976910228">0976 910 228</a> – <a href="tel:0902603383">0902 603 383</a>
@@ -122,8 +123,9 @@
             </div>
             <br/>
             <div class="videoWrapper">
-              <iframe width="100%" src="https://www.youtube.com/embed/ypBq8AWRzT4" frameborder="0" allowfullscreen></iframe>
+              <iframe width="100%" src="https://www.youtube.com/embed/p-DwbBYAqKg" frameborder="0" allowfullscreen></iframe>
             </div>
+
           </article>
           <% include ../partials/side-box.html %>
         </div>
@@ -133,6 +135,7 @@
     <% include ../partials/why-us.html %>
     <% include ../partials/customer-say.html %>
     <% include ../partials/footer.html %>
+    <% include ../partials/review.html %>
   </div>
   <% include ../partials/js.html %>
   <script src="/js/visa-services.js"></script>

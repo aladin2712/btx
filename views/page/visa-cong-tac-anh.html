@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+
+ <% include ../partials/head.html %>
+
+<body>
+
+  <div class="layout ">
+    <div class="promo-med  promo-block promo-block-visa-details" style="background-image:url(/images/russia-visa.jpg);">
+      <header>
+        <% include ../partials/header.html %>
+      </header>
+
+
+      <div class="modal fade" id="modal-get-started" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                        <i class="fa fa-times"></i>
+                </span>
+              </button>
+           </div>
+          </div>
+        </div>
+      </div>
+        <!-- 4 steps -->
+      <% include ../partials/foursteps.html %>
+    </div>
+
+<% include ../partials/visa-services.html %>
+    <!-- visa services -->
+    <section class="container main-content white caret-bottom">
+      <br/><br/>
+      <div class="container">
+        <div class="row">
+          <article class="content-block col-lg-9 col-md-8 col-sm-8">
+            <h2>
+              Những giấy tờ cần chuẩn bị khi làm thủ tục xin visa <%=country%> <%=visaType%> gồm:
+            </h2>
+            <ol type="1">
+              <li>
+                02 hình 3.5 x 4.5 cm (nền trắng không quá 6 tháng)
+              </li>
+              <li>Hộ chiếu còn hạn 6 tháng</li>
+              <li>CMND (sao y bản chính)</li>
+              <li>Sổ hộ khẩu (bản sao 16 trang, sao y bản chính)</li>
+              <li>Giấy đăng kí kết hôn/ly hôn (bản sao, sao y bảng chính)</li>
+              <li>Thư mời của công ty tại Pháp nêu rõ mục đích và thời gian của chuyến đi cùng với chương trình cụ thể của chuyến đi và danh sách những người được mời + bản sao.</li>
+              <li>Các giấy tờ chứng minh mối liên hệ giữa 2 công ty: hợp đồng / chứng từ / email, …
+</li>
+              <li>Quyết định cử đi công tác của công ty tại Việt nam</li>
+              <li>Hợp đồng lao động, bảng lương/sao kê tài khoản nhận lương 3 tháng gần nhất (nếu là nhân viên)</li>
+              <li>Giấy phép kinh doanh, biên lai nộp thuế 3 tháng gần nhất, sao kê tài khoản ngân hàng
+</li>
+              <li>Chứng minh tài chính: Giấy tờ nhà đất (photo, sao y bảng chính), sổ tiết kiệm hoặc số dư tài khoản tại thời điểm hiện tại (xác nhận của ngân hàng)</li>
+            </ol>
+            <strong>Lưu ý </strong>:
+              Tất cả các giấy tờ photo một mặt trên khổ giấy A4, không cắt nhỏ<br/>
+              Những giấy tờ làm thủ tục xin visa <%=country%> công tác ở trên có thể thay đổi theo yêu cầu của cơ quan lãnh sự <%=country%>. Vì vậy để biết chính xác cần phải chuẩn bị những gì để có thể hoàn thiện hồ sơ xin visa <%=country%>, vui lòng liên hệ với Bầu trơì xanh để được tư vấn.
+
+            </p>
+            <div>
+
+            </div>
+          </article>
+          <% include ../partials/side-box.html %>
+
+        </div>
+      </div>
+    </section>
+    <% include ../partials/why-us.html %>
+    <% include ../partials/customer-say.html %>
+    <% include ../partials/footer.html %>
+    <% include ../partials/review.html %>
+  </div>
+
+  <% include ../partials/js.html %>
+  <script src="/js/visa-services.js"></script>
+
+</body>
+
+
+
+</html>

@@ -18,6 +18,9 @@ pageInfos['cung-nhau-tim-hieu-ve-thanh-pho-ottawa-canada'] = {
 pageInfos['ottawa-thanh-pho-dep-nhu-mo'] = {
   title:'Ottawa thành phố đẹp như mơ - Visa Canada Bầu Trời Xanh'
 };
+pageInfos['canh-giac-voi-visa-bao-dau'] = {
+  title:'Cảnh giác với visa bao đậu'
+};
 
 router.get('/:page', function(req, res, next) {
   var page = req.params['page'];

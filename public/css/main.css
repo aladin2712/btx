@@ -11416,3 +11416,22 @@ background: none;
 	width: 100%;
 	height: 100%;
 }
+.type:before {
+	content:'[';
+}
+
+.type:after {
+	content:'] ';
+}
+
+.type{
+	-webkit-text-fill-color: #01addf; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #01addf;
+}
+
+a.important .type{
+	-webkit-text-fill-color: red; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #01addf;
+}

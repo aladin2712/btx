@@ -21,6 +21,13 @@ router.get('/:visaType/:country', function(req, res, next) {
   }
   var title = "Visa đi "+ country + " "+ messageProperties[visaType] +" | Hỗ trợ thủ tục | BTX.VN" ;
   var des = desMap[visaType].replace(new RegExp('\\{0\\}', 'g'), country);
+  var sideVideos = {
+    'anh':'yTBCaIEF3VE',
+    'phap':'QWC_W_ZOGdc',
+    'ha-lan':'VNZO8W9QzmE',
+    'duc':'KFnDzsr-5ac',
+    'uc':'CgmQoMjZ-Z4',
+  }
   var model = {
     visaType:messageProperties[visaType],
     country:country,
@@ -29,13 +36,16 @@ router.get('/:visaType/:country', function(req, res, next) {
   };
   var specialCoutries = [
     {'html':'canada','display':'canada'},
-    {'html':'ha-lan','display':'Hà Lan'}
+    {'html':'ha-lan','display':'Hà Lan'},
+    {'html':'anh','display':'Anh Quốc'},
+    {'html':'uc','display':'Úc'}
   ];
   var specialCountry = '';
   for(var i = 0 ; i < specialCoutries.length; i ++){
     console.log(country);
     if(country.toUpperCase() == specialCoutries[i].display.toUpperCase()){
       specialCountry = '-'+specialCoutries[i].html;
+      model.sidevideo = sideVideos[specialCoutries[i].html];
     }
   }
   var page = 'page/'+visaType+specialCountry+'.html';
